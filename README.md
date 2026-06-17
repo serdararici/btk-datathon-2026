@@ -84,8 +84,12 @@ EDA aşamasında öne çıkan bulgular:
 - **Gürültü sütunları:** `hobby` ve `preferred_social_media_platform` kategorileri arasında anlamlı fark bulunmadı, bu sütunlar modelden çıkarıldı.
 
 ![Eksik değerler](images/missing_values.png)
+
 ![Hedef değişken dağılımı](images/target_distribution.png)
+
 ![Özellik korelasyonları](images/correlations.png)
+
+
 ![Kategorik değişken analizi](images/categorical_analysis.png)
 
 ## Feature Engineering
@@ -124,7 +128,7 @@ Türetilen özelliklerin hedefle korelasyonu ve XGBoost modelindeki önem sıral
 
 ## Sonuçlar
 
-Proje, Kaggle public MSE skorunu **99.09'dan 90.33'e** düşürdü (8.76 puan iyileştirme). Yapılan ileri analizde, veri setinin doğasında kasıtlı olarak eklenmiş bir gürültü payı bulunduğu (R² tavanı ~0.64) ve modelin bu tavana yakın bir performansa ulaştığı tespit edildi. Tüm detaylar ve denenip elenen ek yöntemler [PDF raporunda](./BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) ayrıntılı olarak açıklanmıştır.
+Proje, Kaggle public MSE skorunu **99.09'dan 90.33'e** düşürdü (8.76 puan iyileştirme). Yapılan ileri analizde, veri setinin doğasında kasıtlı olarak eklenmiş bir gürültü payı bulunduğu (R² tavanı ~0.64) ve modelin bu tavana yakın bir performansa ulaştığı tespit edildi. Tüm detaylar ve denenip elenen ek yöntemler [PDF raporunda](./docs/BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) ayrıntılı olarak açıklanmıştır.
 
 ## Öğrenilen Dersler
 
