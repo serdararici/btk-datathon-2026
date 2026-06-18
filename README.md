@@ -8,7 +8,7 @@ Google ve Girişimcilik Vakfı iş birliğiyle BTK Akademi tarafından düzenlen
 |---|---|
 | **En iyi Kaggle public skoru** | 90.33 (MSE) |
 | **Kaggle profili** | [kaggle.com/serdararici](https://www.kaggle.com/serdararici) |
-| **Detaylı proje raporu (PDF)** | [BTK_Datathon_2026_Proje_Dokumantasyonu.pdf](./BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) |
+| **Detaylı proje raporu (PDF)** | [BTK_Datathon_2026_Proje_Dokumantasyonu.pdf](./docs/BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) |
 | **Geliştirme ortamı** | Google Colab |
 
 ---
