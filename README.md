@@ -8,7 +8,7 @@ Google ve Girişimcilik Vakfı iş birliğiyle BTK Akademi tarafından düzenlen
 |---|---|
 | **En iyi Kaggle public skoru** | 90.33 (MSE) |
 | **Kaggle profili** | [kaggle.com/serdararici](https://www.kaggle.com/serdararici) |
-| **Detaylı proje raporu (PDF)** | [BTK_Datathon_2026_Proje_Dokumantasyonu.pdf](./BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) |
+| **Detaylı proje raporu (PDF)** | [BTK_Datathon_2026_Proje_Dokumantasyonu.pdf](./docs/BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) |
 | **Geliştirme ortamı** | Google Colab |
 
 ---
@@ -56,7 +56,8 @@ btk-datathon-2026/
 │   ├── v4_final.ipynb                 # Ensemble + Optuna hiperparametre tuning
 │   └── v5_advanced.ipynb              # Stacking + etkileşim/log özellikleri (final model)
 ├── images/                            # README görselleri
-├── BTK_Datathon_2026_Proje_Dokumantasyonu.pdf   # Detaylı proje raporu
+├── docs/
+│   └── BTK_Datathon_2026_Proje_Dokumantasyonu.pdf   # Detaylı proje raporu
 └── README.md
 ```
 
@@ -124,14 +125,14 @@ Türetilen özelliklerin hedefle korelasyonu ve XGBoost modelindeki önem sıral
 
 ## Sonuçlar
 
-Proje, Kaggle public MSE skorunu **99.09'dan 90.33'e** düşürdü (8.76 puan iyileştirme). Yapılan ileri analizde, veri setinin doğasında kasıtlı olarak eklenmiş bir gürültü payı bulunduğu (R² tavanı ~0.64) ve modelin bu tavana yakın bir performansa ulaştığı tespit edildi. Tüm detaylar ve denenip elenen ek yöntemler [PDF raporunda](./BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) ayrıntılı olarak açıklanmıştır.
+Proje, Kaggle public MSE skorunu **99.09'dan 90.33'e** düşürdü (8.76 puan iyileştirme). Yapılan ileri analizde, veri setinin doğasında anlamlı miktarda indirgenemeyen gürültü bulunduğu (lineer modelde R² ~0.57) tespit edildi; bir deneyde en iyi çapraz doğrulama MSE'si ~82 olarak ölçüldü, ancak bu kesin bir matematiksel sınır değildi — sonraki adımlarda bunun altına (~79) inilebildi. Tüm detaylar ve denenip elenen ek yöntemler [PDF raporunda](./docs/BTK_Datathon_2026_Proje_Dokumantasyonu.pdf) ayrıntılı olarak açıklanmıştır.
 
 ## Öğrenilen Dersler
 
 - Hiperparametre tuning, tek başına en büyük kazancı sağladı — doğru ayarlar bazen yeni özelliklerden daha değerli olabiliyor.
 - NLP gerçekten katkı sağladı; basit kelime sayımı ile gelişmiş TF-IDF birbirini doğruladı.
 - Her fikir işe yaramadı; bu denemeler de (neden işe yaramadıkları açıklamasıyla birlikte) belgelendi.
-- Veri setinin teorik bir gürültü tabanı var; bunu fark etmek imkansız kazançların arkasından koşmayı önledi.
+- Veri setinde anlamlı miktarda indirgenemeyen gürültü var; bunu fark etmek beklentileri gerçekçi tutmaya yardımcı oldu, ancak kesin bir alt sınır kanıtlanamadı.
 
 ## Kullanılan Araçlar
 
