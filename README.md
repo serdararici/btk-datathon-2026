@@ -78,7 +78,7 @@ Her notebook, Colab'a kaydedilirken kendi Colab açma linkini içerecek şekilde
 | V5 | Stacking + etkileşim özellikleri + log dönüşümleri | 90.33 |
 | V6 | Target Encoding + Soft-Blend Ceiling Correction | **88.94** |
 
-![Versiyonlar arası model performansı](https://github.com/serdararici/btk-datathon-2026/blob/main/images/model_progression.png)
+![Versiyonlar arası model performansı](https://github.com/serdararici/btk-datathon-2026/blob/main/images/model_progression_v2.png)
 
 ## Keşifsel Veri Analizi
 
